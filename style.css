@@ -1,7 +1,7 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
-    margin-top: 8%;
+    margin-top: 10%;
     margin-bottom: 8%;
     background-color: #f2f2f2;
 }
@@ -22,7 +22,7 @@ article.container {
 
 .sedan-container {
     background-color: hsl(31, 77%, 52%);   
-    border-radius: 14px 0 0 14px;
+    border-radius: 12px 0 0 12px;
 }
 
 .suv-container {
@@ -31,7 +31,7 @@ article.container {
 
 .luxury-container {
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0 14px 14px 0;
+    border-radius: 0 12px 12px 0;
 }
 
 h1 {
@@ -49,7 +49,8 @@ p {
     border:hsl(0, 0%, 95%) 2px solid;
     transition: ease-in;
     transition-duration: 100ms;
-    font-size: 17px;
+    font-size: 16px;
+    padding: 10px 15px;
 }
 
 .btn:active {
@@ -74,21 +75,21 @@ p {
 
 @media screen and (max-width: 991px) {
     .suv-container {
-        border-radius: 0 14px 14px 0;
+        border-radius: 0 12px 12px 0;
     }
     .luxury-container {
-        border-radius: 14px;
+        border-radius: 12px;
     }
 }
 @media screen and (max-width: 767px) {
     .sedan-container {
-        border-radius: 14px 14px 0 0;
+        border-radius: 12px 12px 0 0;
     }
     
     .suv-container {
         border-radius: 0;
     }
     .luxury-container {
-        border-radius: 0 0 14px 14px;
+        border-radius: 0 0 12px 12px;
     }
 }
