@@ -1,35 +1,37 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    background-color: lightGrey;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-color: #f2f2f2;
 }
 
-main.container {
-    width: 960px;
+main {
+    background-color: #f2f2f2;
+}
+
+article.container {
+    width: auto;
     margin: auto;
 }
 
-@media screen and (max-width: 960px) {
-    main.container {
-        width: auto;
-    }
+
+.car-container {
+    width: 310px;
 }
 
 .sedan-container {
     background-color: hsl(31, 77%, 52%);   
-    width: 310px; 
+    border-radius: 14px 0 0 14px;
 }
 
 .suv-container {
     background-color: hsl(184, 100%, 22%);
-    width: 310px;
 }
 
 .luxury-container {
     background-color: hsl(179, 100%, 13%);
-    width: 310px;
+    border-radius: 0 14px 14px 0;
 }
 
 h1 {
@@ -47,31 +49,46 @@ p {
     border:hsl(0, 0%, 95%) 2px solid;
     transition: ease-in;
     transition-duration: 100ms;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .btn:active {
     opacity: 70%;
 }
 
+.car-container .btn:hover {
+    background-color: transparent;
+    color:hsl(0, 0%, 95%);
+}
+
 .sedan-container .btn {
     color:hsl(31, 77%, 52%);
 }
-.sedan-container .btn:hover {
-    background-color:hsl(31, 77%, 52%);
-    color:hsl(0, 0%, 95%);
-}
+
 .suv-container .btn {
     color:hsl(184, 100%, 22%);
-}
-.suv-container .btn:hover {
-    background-color:hsl(184, 100%, 22%);
-    color:hsl(0, 0%, 95%)
 }
 .luxury-container .btn {
     color: hsl(179, 100%, 13%);
 }
-.luxury-container .btn:hover {
-    color:hsl(0, 0%, 95%);
-    background-color: hsl(179, 100%, 13%);
+
+@media screen and (max-width: 991px) {
+    .suv-container {
+        border-radius: 0 14px 14px 0;
+    }
+    .luxury-container {
+        border-radius: 14px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sedan-container {
+        border-radius: 14px 14px 0 0;
+    }
+    
+    .suv-container {
+        border-radius: 0;
+    }
+    .luxury-container {
+        border-radius: 0 0 14px 14px;
+    }
 }
